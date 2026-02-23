@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Instagram, MapPin } from 'lucide-react';
 import { motion as Motion, AnimatePresence } from 'framer-motion';

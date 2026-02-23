@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion as Motion } from 'framer-motion';
 
 const Button = ({ children, onClick, className = "", type = "button", variant = "primary", disabled = false }) => {

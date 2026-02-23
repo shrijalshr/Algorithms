@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { supabase } from '../lib/supabase';
 import { mockMenuItems } from '../lib/mockData';
 import Button from '../components/Button';
-import { Trash2, Edit2, Plus, Save, X, LogOut } from 'lucide-react';
+import { Trash2, Edit2, Save, LogOut } from 'lucide-react';
 import { motion as Motion, AnimatePresence } from 'framer-motion';
 
 const Admin = () => {
@@ -21,7 +21,7 @@ const Admin = () => {
     available: true
   });
 
-  const fetchItems = React.useCallback(async () => {
+  const fetchItems = useCallback(async () => {
     await Promise.resolve(); // Avoid synchronous setState warning in useEffect
     setLoading(true);
     if (supabase) {
@@ -216,7 +216,7 @@ const Admin = () => {
         <div className="flex justify-between items-center mb-8">
           <div>
              <h1 className="text-3xl font-bold text-[#4A3B32]">Menu Management</h1>
-             <p className="text-gray-500 text-sm mt-1">Manage your cafe's offerings</p>
+             <p className="text-gray-500 text-sm mt-1">Manage your cafe&apos;s offerings</p>
           </div>
           <div className="flex gap-4">
             <Button onClick={handleLogout} variant="outline" className="flex items-center gap-2 cursor-pointer">

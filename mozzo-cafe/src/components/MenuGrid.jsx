@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion as Motion } from 'framer-motion';
 import { supabase } from '../lib/supabase';
 import { mockMenuItems } from '../lib/mockData';

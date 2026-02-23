@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion as Motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import coffeeAnimation from '../assets/coffee-animation.json';

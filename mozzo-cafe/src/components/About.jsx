@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion as Motion } from 'framer-motion';
 
 const About = () => {
@@ -36,7 +35,7 @@ const About = () => {
               Nestled in the bustling market of Biratnagar, Mozzo Cafe is your sanctuary. We believe in the power of a good cup of coffee to pause time.
             </p>
             <p className="text-lg text-[#333333]/80 mb-6 leading-relaxed">
-              Whether you're here for our diverse menu—ranging from Japanese delights to local favorites—or just to hang out with friends, you'll feel right at home.
+              Whether you&apos;re here for our diverse menu—ranging from Japanese delights to local favorites—or just to hang out with friends, you&apos;ll feel right at home.
             </p>
             <p className="text-[#4A3B32] font-medium italic">
               — And say hi to Simba, our resident cat manager! 🐾
