@@ -14,10 +14,33 @@ A modern, elegant, and minimal website for Mozzo Cafe (Biratnagar, Nepal), built
 
 ### Prerequisites
 
-- Node.js (v18+)
-- npm or yarn
+To run this project locally, you will need:
 
-### Installation
+1.  **Node.js (v18+)**: [Download and install](https://nodejs.org/) the latest LTS version.
+2.  **Git** (Optional): To clone the repository.
+3.  **Terminal/Command Prompt**: Basic command line interface.
+
+### Quick Start (Recommended)
+
+We provide a script to get you up and running instantly.
+
+1.  **Run the script from the root directory:**
+
+    ```bash
+    ./start_mozzo.sh
+    ```
+
+    This script will:
+    - Navigate to the `mozzo-cafe` directory.
+    - Install necessary dependencies (`npm install`).
+    - Start the development server (`npm run dev`).
+
+2.  **Open your browser:**
+    Navigate to the URL shown in the terminal (usually `http://localhost:5173`).
+
+### Manual Installation
+
+If you prefer to run commands manually:
 
 1.  Clone the repository.
 2.  Navigate to the project directory:
@@ -28,8 +51,14 @@ A modern, elegant, and minimal website for Mozzo Cafe (Biratnagar, Nepal), built
     ```bash
     npm install
     ```
+4.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-### Supabase Setup
+### Supabase Setup (Optional)
+
+By default, the app runs in **Mock Mode** using local data. To connect a live backend:
 
 1.  Create a new project on [Supabase](https://supabase.com/).
 2.  Go to the SQL Editor and run the content of `schema.sql` to create the `menu_items` table and set up RLS policies.
@@ -39,12 +68,6 @@ A modern, elegant, and minimal website for Mozzo Cafe (Biratnagar, Nepal), built
     cp .env.example .env
     ```
 5.  Fill in your `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in the `.env` file.
-
-### Running the App
-
-```bash
-npm run dev
-```
 
 The app will start at `http://localhost:5173`.
 
